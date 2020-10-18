@@ -1,0 +1,27 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <HBox>
+        <!--JFXButton fx:id="createDBB" text="Create a Database." /-->
+
+        <VBox>
+            <JFXButton fx:id="createTableB" text="Create New Patient Table"/>
+            <JFXButton fx:id="fillTableB" text="Fill Current Patient Table With 10 Patients." />
+            <JFXButton fx:id="deleteTableB" text="Delete Current Patient Table" />
+        </VBox>
+        <JFXListView fx:id="patientListLV" />
+        <VBox>
+            <JFXButton fx:id="nameSortB" text="Filter Patients by Name."/>
+            <JFXButton fx:id="ageSortB" text="Filter Patients by Age."/>
+            <JFXButton fx:id="bloodTypeSortB" text="Filter Patients by Blood Type."/>
+        </VBox>
+    </HBox>
+</GridPane>
